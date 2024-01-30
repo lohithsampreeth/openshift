@@ -4,7 +4,7 @@ import groovy.json.JsonSlurper
     //APP_NAME = "backoapi"
     APP_NAME = "${env.gitlabSourceRepoName}"
    // def GIT_REPO_URL = "${env.gitlabSourceRepoHttpUrl}"
-    def GIT_REPO_URL = "https://10.1.4.173/lohith.s/openshift-new.git/"
+  //  def GIT_REPO_URL = "https://10.1.4.173/lohith.s/openshift-new.git/"
     def GIT_REPO_BRANCH = "${env.gitlabBranch}"
     def GIT_REPO_SECRET = 'lohith'
 
