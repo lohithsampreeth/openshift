@@ -28,16 +28,12 @@ pipeline {
         stage("Parallel") {
             parallel {
                 stage("1.k8s") {
-                    agent {
-                        kubernetes {
-                            yaml podTemplate
-                            defaultContainer 'k8s'
-                        }
-                    }
+                    agent { label 'openshift' }
                     steps {
                         sh """
                             date
                         """
+                    }
                     }
                 }
                 stage("2.k8s") {
