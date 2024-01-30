@@ -36,7 +36,7 @@ pipeline {
                     }
                     steps {
                         sh """
-                            mvn -version
+                            date
                         """
                     }
                 }
