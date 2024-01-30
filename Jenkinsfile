@@ -27,15 +27,15 @@ pipeline {
     stages {
         stage("Parallel") {
             parallel {
-                stage("1.k8s") {
+                  stage("1.k8s") {
                     agent { label 'openshift' }
                     steps {
                         sh """
                             date
                         """
                     }
-                    }
                 }
+                
                 stage("2.k8s") {
                     agent { label 'openshift' }
                     steps {
