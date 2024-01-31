@@ -23,7 +23,7 @@ volumes:
 """
 
 pipeline {
-    agent none
+    agent openshift
     stages {
         stage("Parallel") {
             parallel {
