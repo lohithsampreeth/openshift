@@ -36,7 +36,7 @@ pipeline {
                     }
                     steps {
                         sh """
-                           ls -lrth
+                           /home/jenkins/agent/workspace/github-lohith/date.sh
                         """
                     }
                 }
@@ -44,7 +44,7 @@ pipeline {
                     agent { label 'openshift' }
                     steps {
                         sh """
-                            /home/jenkins/agent/workspace/github-lohith/date.sh
+                           ls -lrth
                         """
                     }
                 }
