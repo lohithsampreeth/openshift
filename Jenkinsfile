@@ -36,7 +36,7 @@ pipeline {
                     }
                     steps {
                         sh """
-                           /home/jenkins/agent/workspace/github-lohith/date.sh
+                           date
                         """
                     }
                 }
